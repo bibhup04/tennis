@@ -1,0 +1,107 @@
+/* .Game-container styles */
+.Game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Use min-height to ensure the container expands with content */
+  background-color: #3498db; /* Set a blue background color */
+}
+
+/* .grid-container styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  text-align: center;
+  border: 2px solid #ccc; /* Increase border width */
+  padding: 20px;
+  width: 90%; /* Slightly wider grid container */
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  border-radius: 10px; /* Increase border radius for rounded corners */
+}
+
+/* .grid-item styles */
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9; /* Light gray background color */
+}
+
+/* button styles */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Slightly larger padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px; /* Increase font size */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth background color transition */
+}
+
+/* Style the disabled buttons */
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* .overlay styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* .winner-overlay styles */
+.winner-overlay {
+  font-size: 36px; /* Slightly smaller font size */
+  font-weight: bold;
+  color: #4caf50; /* Green color for winner text */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* .button-container styles */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; /* Slightly larger margin */
+}
+
+/* .player-button styles */
+.player-button {
+  margin-right: 15px; /* Slightly larger margin between buttons */
+  padding: 12px 24px;
+  background-color: #e74c3c; /* Red color for buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth background color transition */
+}
+
+.player-button:hover {
+  background-color: #c0392b; /* Darker red color on hover */
+}
+
+/* .button-space styles */
+.button-space {
+  width: 30px; /* Increase the space between buttons */
+}
